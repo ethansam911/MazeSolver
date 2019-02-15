@@ -1,23 +1,27 @@
+In "inputA.txt" or "inputB.txt" 
+_ = hallway
 
-To compile on terminal type: g++
-  make clean
-  make all
+* = wall
 
-To delete executables and object file type
-  make clean
+$ = exit
+--------------------------------
+To change to "inputB.txt" open main.cpp and change the read file:
+ MazeSolver solver("inputB.txt");
 
-To run:
+TO RUN:
 
-./test_points2
+Use a g++ compiler or any bash equivalent:
 
-For the above case you will provide input from standard input.
+type in:
 
-To run with a given file that is redirected to standard input:test
+g++ -o myProg main.cpp
 
-This file is included (You can substitute the values as long as their type remains consistent)
+./myProg 
 
-To run with the given file:
 
-./test_points2 < test_input_file.txt
+You can modify hallways and walls in any way, but starting position 
+will be in the upper-left position and the exit will always be in
+the lower-right position 
+
 
 
